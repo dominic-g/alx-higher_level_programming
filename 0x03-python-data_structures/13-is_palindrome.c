@@ -4,13 +4,13 @@
 
 
 /**
-  * slistint_len -This Counts the number of elements in a linked list
+  * list_len -This Counts the number of elements in a linked list
   *
   * @sm_list: The linked list to count
   *
   * Return: Number of elements in the linked list
   */
-size_t listint_len(const listint_t *sm_list)
+size_t list_len(const listint_t *sm_list)
 {
 	int length = 0;
 
@@ -72,7 +72,7 @@ int is_palindrome(listint_t **head)
 		return (1);
 
 	start = *head;
-	len = listint_len(start);
+	len = list_len(start);
 	sm_len = len * 2;
 	sm_lol = sm_len - 2;
 	end = *head;
