@@ -10,17 +10,17 @@
   *
   * Return: Number of elements in the linked list
   */
-size_t list_len(const listint_t *sm_list)
+size_t list_len(const listint_t *linked_list)
 {
-	int length = 0;
+	int len = 0;
 
-	while (sm_list != NULL)
+	while (linked_list != NULL)
 	{
-		++length;
-		sm_list = sm_list->next;
+		++len;
+		linked_list = linked_list->next;
 	}
 
-	return (length);
+	return (len);
 }
 
 /**
