@@ -6,7 +6,7 @@
 /**
   * list_len -This Counts the number of elements in a linked list
   *
-  * @sm_list: The linked list to count
+  * @linked_list: The linked list to count
   *
   * Return: Number of elements in the linked list
   */
