@@ -24,6 +24,36 @@ size_t list_len(const listint_t *_list)
 }
 
 /**
+  * get_nodeint_at_index - Gets a node from a linked list
+  *
+  * @head: The head of the linked list
+  * @index: The index to find in the linked list
+  *
+  * Return: The specific node of the linked list
+  */
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+	listint_t *sm_curr = head;
+	unsigned int iterator = 0;
+
+	if (head)
+	{
+		while (sm_curr != NULL)
+		{
+			if (iterator == index)
+				return (sm_curr);
+
+			sm_curr = sm_curr->next;
+			++iterator;
+		}
+	}
+
+	return (NULL);
+}
+
+
+
+/**
   * is_palindrome - Checks if a given singly linked list is a palindrome
   *
   * @first: The head of the singly linked list
