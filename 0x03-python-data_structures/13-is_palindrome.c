@@ -8,7 +8,7 @@
   *
   * @linked_list: The linked list to count
   *
-  * Return: Number of elements in the linked list
+  * Return: Length of the linked list
   */
 size_t list_len(const listint_t *linked_list)
 {
