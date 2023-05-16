@@ -4,23 +4,23 @@
 
 
 /**
-  * list_len -This Counts the number of elements in a linked list
+  * slistint_len -This Counts the number of elements in a linked list
   *
-  * @_list: The linked list to count
+  * @sm_list: The linked list to count
   *
   * Return: Number of elements in the linked list
   */
-size_t list_len(const listint_t *_list)
+size_t listint_len(const listint_t *sm_list)
 {
-	int len = 0;
+	int length = 0;
 
-	while (_list != NULL)
+	while (sm_list != NULL)
 	{
-		++len;
-		_list = _list->next;
+		++length;
+		sm_list = sm_list->next;
 	}
 
-	return (len);
+	return (length);
 }
 
 /**
@@ -56,33 +56,33 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 /**
   * is_palindrome - Checks if a given singly linked list is a palindrome
   *
-  * @first: The head of the singly linked list
+  * @head: The head of the singly linked list
   *
   * Return: 0 if it is not a palindrome, 1 if it is a palindrome
   */
-int is_palindrome(listint_t **first)
+int is_palindrome(listint_t **head)
 {
-	listint_t *first = NULL, *last = NULL;
-	unsigned int i = 0, len = 0, _len = 0, lol = 0;
+	listint_t *start = NULL, *end = NULL;
+	unsigned int i = 0, len = 0, sm_len = 0, sm_lol = 0;
 
-	if (first == NULL)
+	if (head == NULL)
 		return (0);
 
-	if (*first == NULL)
+	if (*head == NULL)
 		return (1);
 
-	start = *first;
-	len = list_len(start);
-	_len = len * 2;
-	lol = _len - 2;
-	last = *first;
+	start = *head;
+	len = listint_len(start);
+	sm_len = len * 2;
+	sm_lol = sm_len - 2;
+	end = *head;
 
-	for (; k < _len; k = k + 2)
+	for (; i < sm_len; i = i + 2)
 	{
-		if (start[k].n != last[lol].n)
+		if (start[i].n != end[sm_lol].n)
 			return (0);
 
-		lol = lol - 2;
+		sm_lol = sm_lol - 2;
 	}
 
 	return (1);
