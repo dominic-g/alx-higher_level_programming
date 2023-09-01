@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""0x11. Python - Network #1"""
 import requests
 from requests.auth import HTTPBasicAuth
 import sys

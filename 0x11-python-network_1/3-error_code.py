@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""0x11. Python - Network #1"""
 import urllib.request
 import urllib.error
 import sys
