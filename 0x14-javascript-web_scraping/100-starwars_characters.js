@@ -12,4 +12,3 @@ request(starWarsUrl, function (_err, _res, body) {
     });
   }
 });
-

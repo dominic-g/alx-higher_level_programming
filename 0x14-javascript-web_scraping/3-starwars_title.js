@@ -8,7 +8,7 @@ function movieTitle (url) {
     if (error) {
       console.log(error);
     } else {
-      let jsonDict = JSON.parse(body);
+      const jsonDict = JSON.parse(body);
       console.log(jsonDict.title);
     }
   });
